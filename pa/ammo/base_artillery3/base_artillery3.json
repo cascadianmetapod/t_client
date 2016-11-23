@@ -1,0 +1,36 @@
+{
+  "ammo_type": "AMMO_Projectile",
+  "damage": 50000,
+  "events": {
+    "died": {
+      "audio_cue": "/SE/Impacts/missile_nuke",
+      "effect_spec": "/pa/units/land/nuke_launcher/nuke_launcher_ammo_explosion_air.pfx"
+    }
+  },
+  "flight_type": "Direct",
+  "fx_trail": {
+    "effect_scale": 3,
+    "filename": "/pa/effects/specs/uber_proj_trail.pfx",
+    "offset": [
+      0.0,
+      1.0,
+      0.0
+    ]
+  },
+  "initial_velocity": 17.0,
+  "lifetime": 30,
+  "model": {
+    "filename": "/pa/units/air/shell_large/shell_large.papa"
+  },
+  "physics": {
+    "add_to_spatial_db": false,
+    "allow_underground": true,
+    "gravity_scalar": 1,
+    "push_class": 1,
+    "radius": 1
+  },
+  "spawn_layers": "WL_Air",
+  "splash_damage": 5000,
+  "splash_radius": 2500,
+  "turn_rate": 90
+}

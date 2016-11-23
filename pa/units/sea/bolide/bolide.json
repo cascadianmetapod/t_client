@@ -1,0 +1,118 @@
+{
+  "TEMP_texelinfo": 30.5603,
+  "audio": {
+    "loops": {
+      "move": {
+        "cue": "/SE/Movement/sea/T2_missile_ship_loop",
+        "flag": "vel_changed",
+        "should_start_func": "is_moving",
+        "should_stop_func": "is_not_moving"
+      }
+    }
+  },
+  "base_spec": "/pa/units/sea/base_ship/base_ship.json",
+  "build_metal_cost": 2200,
+  "description": "Fleetsupport ship with an anti-missle/artillery system.",
+  "display_name": "Bolide",
+  "events": {
+    "build_complete": {
+      "audio_cue": "/SE/Build_Complete/sea"
+    },
+    "died": {
+      "audio_cue": "/SE/Death/Sea_large",
+      "effect_scale": 1.5,
+      "effect_spec": "/pa/effects/specs/default_explosion_naval.pfx"
+    },
+    "fired0": {
+      "audio_cue": "/SE/Weapons/bot/sniper_fire_anti_tac",
+      "effect_scale": 2,
+      "effect_spec": "/pa/units/land/bot_sniper/bot_sniper_beam_flash.pfx socket_muzzle01"
+    },
+    "fired1": {
+      "audio_cue": "/SE/Weapons/sea/T2_missile_ship_fire",
+      "effect_scale": 2,
+      "effect_spec": "/pa/effects/specs/default_muzzle_flash.pfx socket_rightMuzzle02 /pa/effects/specs/default_muzzle_flash.pfx socket_rightMuzzle02"
+    }
+  },
+  "fx_offsets": [
+    {
+      "filename": "/pa/units/sea/missile_ship/missile_ship_wake.pfx",
+      "type": "moving_forward"
+    }
+  ],
+  "guard_layer": "WL_AnySurface",
+  "max_health": 2700,
+  "mesh_bounds": [
+    12,
+    30,
+    16
+  ],
+  "model": {
+    "animtree": "/pa/anim/anim_trees/frigate_anim_tree.json",
+    "filename": "/pa/units/sea/frigate/frigate.papa"
+  },
+  "navigation": {
+    "acceleration": 45,
+    "brake": 90,
+    "move_speed": 9,
+    "turn_accel": 35,
+    "turn_speed": 75,
+    "type": "deepwater"
+  },
+  "nearby_target_tick_update_interval": 4,
+  "physics": {
+    "radius": 6,
+    "shape": "sphere"
+  },
+  "recon": {
+    "observer": {
+      "items": [
+        {
+          "channel": "sight",
+          "layer": "surface_and_air",
+          "radius": 200,
+          "shape": "capsule"
+        },
+        {
+          "channel": "sight",
+          "layer": "underwater",
+          "radius": 200,
+          "shape": "capsule"
+        }
+      ]
+    }
+  },
+  "selection_icon": {
+    "diameter": 32.0
+  },
+  "spawn_layers": "WL_WaterSurface",
+  "tools": [
+    {
+      "aim_bone": "bone_pitch01",
+      "fire_event": "fired0",
+      "muzzle_bone": [
+        "socket_muzzle01"
+      ],
+      "record_index": 0,
+      "spec_id": "/pa/units/sea/bolide/bolide_tool_weapon_deff.json"
+    },
+    {
+      "aim_bone": "bone_pitch02",
+      "fire_event": "fired1",
+      "muzzle_bone": [
+        "socket_rightMuzzle02",
+        "socket_leftMuzzle02"
+      ],
+      "record_index": 1,
+      "spec_id": "/pa/units/sea/bolide/bolide_tool_weapon_cluster.json"
+    }
+  ],
+  "unit_types": [
+    "UNITTYPE_Naval",
+    "UNITTYPE_Mobile",
+    "UNITTYPE_Offense",
+    "UNITTYPE_Advanced",
+    "UNITTYPE_Artillery",
+    "UNITTYPE_FactoryBuild"
+  ]
+}
