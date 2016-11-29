@@ -34,7 +34,8 @@ var Build = (function() {
                 
 				"/pa/units/land/engineering_station/engineering_station.json": ["utility", 6],
 				"/pa/units/land/advanced_engineering_station/advanced_engineering_station.json": ["utility", 7],
-                "/pa/units/orbital/orbital_def/orbital_def.json": ["utility", 17],
+				"/pa/units/land/omni_tower/omni_tower.json": ["utility", 8],
+              
 				"/pa/units/land/radar/radar.json": ["utility", 14],
                 "/pa/units/land/energy_plant/energy_plant.json": ["utility", 9],
                 "/pa/units/land/metal_extractor/metal_extractor.json": ["utility", 10],
@@ -66,7 +67,7 @@ var Build = (function() {
               
              
                 "/pa/units/land/rocket_defense/rocket_defense.json":["combat", 16],
-                "/pa/units/land/air_defense/air_defense.json":["combat", 17],
+               "/pa/units/land/aa_turret/aa_turret.json":["combat", 15],
                 
 				
                
@@ -109,7 +110,7 @@ var Build = (function() {
 			   "/pa/units/land/bot_siege/bot_siege.json": ["bot", 8], 
                 "/pa/units/land/bot_ubercannon/bot_ubercannon.json": ["bot", 1], 
                "/pa/units/land/mb2/mb2.json": ["bot", 2], 
-               "/pa/units/land/megabot/megabot.json": ["bot", 3],
+               
                 
                
                 
@@ -152,11 +153,11 @@ var Build = (function() {
 
 				"/pa/units/sea/bolide/bolide.json": ["sea",11],
                 
-                
-                "/pa/units/sea/nuclear_sub/nuclear_sub.json": ["sea", 9],
+                "/pa/units/sea/boat_assault/boat_assault.json": ["sea", 8],
+                "/pa/units/sea/manta_sub/manta_sub.json": ["sea", 9],
                 
             
-                
+                "/pa/units/sea/recon_sub/recon_sub.json": ["sea",16],
                 "/pa/units/sea/fabrication_barge/fabrication_barge.json": ["sea",17],
 
 

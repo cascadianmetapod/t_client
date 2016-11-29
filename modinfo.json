@@ -311,7 +311,7 @@
       "/pa/units/air/a_fighter/a_fighter.json",
       "/pa/units/air/air_tank/air_tank.json",
       "/pa/units/air/cloud/cloud.json",
-	  "/pa/units/orbital/orbital_def/orbital_def.json",
+	 
 	  "/pa/units/land/laser_defense_riot/laser_defense_riot.json",
       "/pa/units/land/laser_defense_sniper/laser_defense_sniper.json",
        "/pa/units/land/rocket_defense/rocket_defense.json",
@@ -321,7 +321,13 @@
 	   "/pa/units/air/a_transport/a_transport.json",
 	   "/pa/units/air/a_bomber_adv/a_bomber_adv.json",
 	   "/pa/units/land/bomb_bike/bomb_bike.json",
-	    "/pa/units/land/a_tank/a_tank.json"
+	    "/pa/units/land/a_tank/a_tank.json",
+		"/pa/units/commanders/imperial_01/imperial_01.json",
+		"/pa/units/sea/boat_assault/boat_assault.json",
+       "/pa/units/sea/manta_sub/manta_sub.json",
+	   "/pa/units/sea/recon_sub/recon_sub.json",
+	   "/pa/units/land/omni_tower/omni_tower.json",
+	   "/pa/units/land/aa_turret/aa_turret.json"
     ]
   },
   "url": "https://github.com/Heizmeister/com.heiz.aurora_artyUI/archive/1.9.zip",
